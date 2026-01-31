@@ -655,31 +655,42 @@ select {
 /* ========== 광고 컨테이너 ========== */
 .ad-container {
   text-align: center;
-  padding: 16px 0;
-  background: #f9fafb;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 4px 0;
 }
 
-.ad-container ins {
-  min-width: 300px;
+/* AdSense ins 태그 기본 (승인 전) */
+.ad-container ins.adsbygoogle {
+  display: block !important;
+  width: 100%;
+  min-height: 20px;
 }
 
-/* 광고 로딩 중 표시 */
-.ad-container:empty::before {
-  content: "광고";
-  color: #9ca3af;
-  font-size: 12px;
+/* 광고 로드 완료 시 (iframe 있을 때) */
+.ad-container ins.adsbygoogle:has(> iframe) {
+  min-height: 100px;
+  padding: 12px 0;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin: 12px 0;
 }
 
-/* 모바일 광고 조정 */
+/* 모바일 최적화 */
 @media (max-width: 600px) {
   .ad-container {
-    padding: 12px 0;
+    margin: 2px 0;
+  }
+
+  .ad-container ins.adsbygoogle {
+    min-height: 10px;
+  }
+
+  .ad-container ins.adsbygoogle:has(> iframe) {
     min-height: 80px;
+    padding: 8px 0;
+    margin: 8px 0;
   }
 }
