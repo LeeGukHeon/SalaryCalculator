@@ -116,8 +116,8 @@ function Home() {
 
         {/* ========== 광고 1: 상단 배너 ========== */}
         <AdSense
-          slot="1234567890" // 👈 본인 광고 슬롯 ID
-          format="horizontal"
+          slot="3434966366" // 👈 본인 광고 슬롯 ID
+          format="auto"
           style={{ marginBottom: "24px" }}
         />
 
@@ -206,8 +206,8 @@ function Home() {
 
             {/* ========== 광고 2: 입력 하단 (계산 전) ========== */}
             <AdSense
-              slot="2345678901" // 👈 본인 광고 슬롯 ID
-              format="rectangle"
+              slot="9808803020" // 👈 본인 광고 슬롯 ID
+              format="auto"
               style={{ margin: "20px auto", maxWidth: "336px" }}
             />
 
@@ -239,8 +239,8 @@ function Home() {
 
             {/* ========== 광고 2: 입력 하단 (계산 전) ========== */}
             <AdSense
-              slot="2345678901" // 👈 본인 광고 슬롯 ID
-              format="rectangle"
+              slot="9808803020" // 👈 본인 광고 슬롯 ID
+              format="auto"
               style={{ margin: "20px auto", maxWidth: "336px" }}
             />
 
@@ -267,8 +267,8 @@ function Home() {
           <div className="result-section">
             {/* ========== 광고 3: 결과 상단 ========== */}
             <AdSense
-              slot="3456789012" // 👈 본인 광고 슬롯 ID
-              format="horizontal"
+              slot="6779315005" // 👈 본인 광고 슬롯 ID
+              format="auto"
               style={{ marginBottom: "24px" }}
             />
 
@@ -378,8 +378,8 @@ function Home() {
 
               {/* ========== 광고 4: 상세 중간 ========== */}
               <AdSense
-                slot="4567890123" // 👈 본인 광고 슬롯 ID
-                format="rectangle"
+                slot="5466233337" // 👈 본인 광고 슬롯 ID
+                format="auto"
                 style={{ margin: "24px auto", maxWidth: "336px" }}
               />
 
@@ -450,8 +450,8 @@ function Home() {
 
               {/* ========== 광고 5: 결과 하단 ========== */}
               <AdSense
-                slot="5678901234" // 👈 본인 광고 슬롯 ID
-                format="horizontal"
+                slot="9021900195" // 👈 본인 광고 슬롯 ID
+                format="auto"
                 style={{ marginTop: "24px" }}
               />
             </div>
@@ -463,8 +463,8 @@ function Home() {
           <div className="result-section">
             {/* ========== 광고 3: 결과 상단 ========== */}
             <AdSense
-              slot="3456789012" // 👈 본인 광고 슬롯 ID
-              format="horizontal"
+              slot="6779315005" // 👈 본인 광고 슬롯 ID
+              format="auto"
               style={{ marginBottom: "24px" }}
             />
 
@@ -537,8 +537,8 @@ function Home() {
 
               {/* ========== 광고 4: 상세 중간 ========== */}
               <AdSense
-                slot="4567890123" // 👈 본인 광고 슬롯 ID
-                format="rectangle"
+                slot="5466233337" // 👈 본인 광고 슬롯 ID
+                format="auto"
                 style={{ margin: "24px auto", maxWidth: "336px" }}
               />
 
@@ -597,8 +597,8 @@ function Home() {
 
               {/* ========== 광고 5: 결과 하단 ========== */}
               <AdSense
-                slot="5678901234" // 👈 본인 광고 슬롯 ID
-                format="horizontal"
+                slot="9021900195" // 👈 본인 광고 슬롯 ID
+                format="auto"
                 style={{ marginTop: "24px" }}
               />
             </div>
@@ -620,8 +620,8 @@ function Home() {
 
       {/* ========== 광고 6: 푸터 광고 ========== */}
       <AdSense
-        slot="6789012345" // 👈 본인 광고 슬롯 ID
-        format="horizontal"
+        slot="4153151665" // 👈 본인 광고 슬롯 ID
+        format="auto"
         style={{ marginTop: "30px" }}
       />
     </div>
