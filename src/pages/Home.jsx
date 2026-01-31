@@ -163,7 +163,7 @@ function Home() {
                 onKeyPress={handleKeyPress}
               />
               <span className="help-text">
-                💡 식대 10만원 + 차량유지비 20만원 = 20만원 (일반적)
+                💡 일반적으로 식대 20만원 (비과세 한도)
               </span>
             </div>
 
