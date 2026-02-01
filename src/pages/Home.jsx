@@ -1031,10 +1031,137 @@ function Home() {
         </p>
       </section>
 
+      {/* 계산 예시 섹션 */}
+      <section className="examples-section" style={{ marginTop: "50px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "30px" }}>
+          💡 실제 계산 예시
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gap: "20px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          }}
+        >
+          <div
+            style={{
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              color: "white",
+              padding: "25px",
+              borderRadius: "12px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>🎓 신입사원 김철수님 (27세)</h3>
+            <ul style={{ listStyle: "none", padding: 0, lineHeight: "1.8" }}>
+              <li>📌 연봉: 3,200만원</li>
+              <li>💵 월급: 2,666,667원</li>
+              <li>🍱 비과세: 식대 20만원</li>
+              <li>👤 부양가족: 본인만 (1명)</li>
+            </ul>
+            <div
+              style={{
+                marginTop: "15px",
+                padding: "15px",
+                background: "rgba(255,255,255,0.2)",
+                borderRadius: "8px",
+                textAlign: "center",
+              }}
+            >
+              <div style={{ fontSize: "0.9rem", marginBottom: "5px" }}>
+                실수령액
+              </div>
+              <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                2,352,480원
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+              color: "white",
+              padding: "25px",
+              borderRadius: "12px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>👨‍💼 5년차 박영희님 (33세, 기혼)</h3>
+            <ul style={{ listStyle: "none", padding: 0, lineHeight: "1.8" }}>
+              <li>📌 연봉: 4,500만원</li>
+              <li>💵 월급: 3,750,000원</li>
+              <li>🍱 비과세: 식대 20만원 + 차량 10만원</li>
+              <li>👨‍👩‍👧 부양가족: 배우자 + 자녀 1명 (3명)</li>
+            </ul>
+            <div
+              style={{
+                marginTop: "15px",
+                padding: "15px",
+                background: "rgba(255,255,255,0.2)",
+                borderRadius: "8px",
+                textAlign: "center",
+              }}
+            >
+              <div style={{ fontSize: "0.9rem", marginBottom: "5px" }}>
+                실수령액
+              </div>
+              <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                3,262,358원
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+              color: "white",
+              padding: "25px",
+              borderRadius: "12px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>💻 프리랜서 최개발님</h3>
+            <ul style={{ listStyle: "none", padding: 0, lineHeight: "1.8" }}>
+              <li>📌 월 계약금액: 500만원</li>
+              <li>💵 원천징수: 3.3%</li>
+              <li>⚠️ 4대 보험: 별도 납부</li>
+            </ul>
+            <div
+              style={{
+                marginTop: "15px",
+                padding: "15px",
+                background: "rgba(255,255,255,0.2)",
+                borderRadius: "8px",
+                textAlign: "center",
+              }}
+            >
+              <div style={{ fontSize: "0.9rem", marginBottom: "5px" }}>
+                실수령액 (4대보험 제외)
+              </div>
+              <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                4,835,000원
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            color: "#7f8c8d",
+            fontSize: "0.95rem",
+          }}
+        >
+          💡 위 계산기를 이용하면 내 조건에 맞는 정확한 실수령액을 확인할 수
+          있습니다!
+        </p>
+      </section>
+
       {/* FAQ 섹션 */}
       <section className="faq-section">
         <h2>❓ 자주 묻는 질문</h2>
-
         <div className="faq-item">
           <h3>Q. 4대 보험은 정확히 무엇인가요?</h3>
           <p>
@@ -1043,7 +1170,6 @@ function Home() {
             월급에서 자동 공제됩니다.
           </p>
         </div>
-
         <div className="faq-item">
           <h3>Q. 부양가족이 많으면 실수령액이 늘어나나요?</h3>
           <p>
@@ -1051,7 +1177,6 @@ function Home() {
             실수령액이 증가합니다. 계산기에서 부양가족 수를 조정해보세요.
           </p>
         </div>
-
         <div className="faq-item">
           <h3>Q. 프리랜서도 4대 보험을 내나요?</h3>
           <p>
@@ -1059,7 +1184,6 @@ function Home() {
             지역가입자로 별도 가입해야 합니다.
           </p>
         </div>
-
         <div className="faq-item">
           <h3>Q. 비과세 항목은 무엇인가요?</h3>
           <p>
@@ -1067,6 +1191,159 @@ function Home() {
             항목입니다. 비과세액이 많을수록 실수령액이 증가합니다.
           </p>
         </div>
+
+        <div className="faq-item">
+          <h3>Q. 연말정산은 어떻게 반영되나요?</h3>
+          <p>
+            A. 계산기는 월별 원천징수 기준입니다. 연말정산 시 추가 공제(보험료,
+            의료비, 교육비 등)가 적용되면 13월의 보너스(환급)를 받을 수
+            있습니다. 반대로 공제가 적으면 추가 납부할 수도 있습니다.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>Q. 상여금도 4대 보험이 붙나요?</h3>
+          <p>
+            A. 네. 상여금, 성과급, 명절 보너스 등 모든 급여성 수입은 4대 보험과
+            소득세가 공제됩니다. 상여금 받을 때 생각보다 적게 받는 이유가 여기에
+            있습니다.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>Q. 왜 매달 실수령액이 조금씩 다른가요?</h3>
+          <p>
+            A. 소득세는 연간 누적 소득을 기준으로 계산하는 누진세이기 때문에,
+            연초와 연말의 원천징수 세액이 다를 수 있습니다. 또한 월별 비과세액
+            변동, 근무일수 차이도 영향을 줍니다.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>Q. 2026년 최저임금 실수령액은?</h3>
+          <p>
+            A. 2026년 최저임금은 시간당 10,320원입니다. 주 40시간(월 209시간)
+            근무 시 월 약 215만원이며, 4대 보험 및 세금 공제 후 실수령액은{" "}
+            <strong>약 189만원 ~ 195만원 내외</strong>입니다.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>Q. 계산 결과가 실제 급여명세서와 다른데요?</h3>
+          <p>
+            A. 회사마다 비과세 항목(식대, 차량유지비 등), 복리후생비, 기타
+            수당이 다를 수 있습니다. 계산기에서{" "}
+            <strong>비과세액과 부양가족 수를 정확히 입력</strong>하면 실제와
+            가까운 금액을 확인할 수 있습니다.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>Q. 프리랜서도 건강보험, 국민연금을 내야 하나요?</h3>
+          <p>
+            A. 네. 프리랜서는 지역가입자로 건강보험과 국민연금을 별도 납부해야
+            합니다. 월 소득에 따라 다르지만 보통 <strong>월 10~30만원</strong>{" "}
+            정도 추가 부담이 발생합니다.
+          </p>
+        </div>
+      </section>
+
+      {/* 블로그 섹션 */}
+      <section className="blog-section" style={{ marginTop: "50px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "30px" }}>
+          💡 연봉 정보
+        </h2>
+
+        <article
+          className="blog-article"
+          style={{
+            background: "#f8f9fa",
+            padding: "30px",
+            borderRadius: "12px",
+            marginBottom: "20px",
+          }}
+        >
+          <h3 style={{ color: "#2c3e50", marginBottom: "15px" }}>
+            📊 2026년 달라진 4대보험 요율 완벽 정리
+          </h3>
+
+          <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "15px" }}>
+            2026년부터 국민연금과 건강보험 요율이 인상되었습니다. 실수령액에
+            어떤 영향을 미치는지 자세히 알아보세요.
+          </p>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#3498db", marginBottom: "15px" }}>
+              주요 변경사항
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#e74c3c" }}>
+                🔴 국민연금 (25년만에 인상!)
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>2025년: 9.0% (근로자 부담 4.5%)</li>
+                <li>
+                  2026년: <strong>9.5% (근로자 부담 4.75%)</strong>
+                </li>
+                <li>월급 300만원 기준: 약 7,500원 증가</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#e67e22" }}>🟠 건강보험</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>2025년: 7.09% (근로자 3.545%)</li>
+                <li>
+                  2026년: <strong>7.19% (근로자 3.595%)</strong>
+                </li>
+                <li>월급 300만원 기준: 약 1,500원 증가</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#f39c12" }}>🟡 장기요양보험</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>2025년: 건강보험료의 12.95%</li>
+                <li>
+                  2026년: <strong>건강보험료의 13.14%</strong>
+                </li>
+                <li>월급 300만원 기준: 약 200원 증가</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong style={{ color: "#27ae60" }}>🟢 고용보험</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>변동 없음: 0.9%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "#fff3cd",
+              padding: "15px",
+              borderRadius: "8px",
+              borderLeft: "4px solid #ffc107",
+            }}
+          >
+            <strong>📌 실수령액 영향</strong>
+            <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+              연봉 4,000만원 기준, 2025년 대비 월 약 <strong>9,200원</strong>{" "}
+              감소
+              <br />
+              연봉 5,000만원 기준, 2025년 대비 월 약 <strong>
+                11,500원
+              </strong>{" "}
+              감소
+              <br />위 계산기를 이용하면 내 연봉 기준 정확한 금액을 확인할 수
+              있습니다!
+            </p>
+          </div>
+        </article>
       </section>
 
       {/* ========== 광고 6: 푸터 광고 ========== */}

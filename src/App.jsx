@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Guide from "./pages/Guide";
+import SalaryInfo from "./pages/SalaryInfo"; // 🆕 추가
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
@@ -67,6 +68,20 @@ function App() {
                 계산기
               </Link>
               <Link
+                to="/info"
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                  fontSize: "1rem",
+                  fontWeight: "500",
+                  transition: "opacity 0.3s",
+                }}
+                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
+                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+              >
+                📊 2026년 정보
+              </Link>
+              <Link
                 to="/guide"
                 style={{
                   color: "white",
@@ -129,6 +144,7 @@ function App() {
         {/* 메인 콘텐츠 */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/info" element={<SalaryInfo />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
