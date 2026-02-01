@@ -694,3 +694,182 @@ select {
     margin: 8px 0;
   }
 }
+
+/* 연봉 참고표 섹션 */
+.salary-table-section {
+  margin-top: 60px;
+  padding: 40px 24px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+}
+
+.salary-table-section.freelancer {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  margin-top: 40px;
+}
+
+.salary-table-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.table-description {
+  text-align: center;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.salary-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.salary-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.salary-table th {
+  color: white;
+  padding: 16px 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.salary-table td {
+  padding: 14px 12px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #333;
+}
+
+.salary-table tbody tr:hover {
+  background: #f8f9fa;
+  transition: background 0.2s;
+}
+
+.salary-table .highlight {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 15px;
+}
+
+.table-note {
+  font-size: 13px;
+  color: #666;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* FAQ 섹션 */
+.faq-section {
+  margin-top: 60px;
+  padding: 40px 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .salary-table-section {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .salary-table-section h2 {
+    font-size: 20px;
+  }
+
+  .table-description {
+    font-size: 13px;
+  }
+
+  .salary-table th,
+  .salary-table td {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  .salary-table .highlight {
+    font-size: 13px;
+  }
+
+  .table-note {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .faq-section {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .faq-section h2 {
+    font-size: 20px;
+  }
+
+  .faq-item {
+    padding: 16px;
+  }
+
+  .faq-item h3 {
+    font-size: 15px;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+  }
+}

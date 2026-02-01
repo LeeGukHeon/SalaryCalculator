@@ -618,6 +618,457 @@ function Home() {
         </ul>
       </div>
 
+      {/* 연봉별 실수령액 참고표 - 전체 구간 */}
+      <section className="salary-table-section">
+        <h2>💰 2026년 연봉별 실수령액 상세표</h2>
+        <p className="table-description">
+          직장인 기준, 2026년 세율 및 4대 보험료 적용 (부양가족 1명 기준)
+          <br />
+          정확한 계산은 위 계산기를 이용해주세요!
+        </p>
+
+        <div className="table-wrapper">
+          <table className="salary-table">
+            <thead>
+              <tr>
+                <th>연봉</th>
+                <th>실수령액</th>
+                <th>세전 월급</th>
+                <th>공제액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2,500만원</td>
+                <td className="highlight">1,856,020원</td>
+                <td>2,083,333원</td>
+                <td>227,314원</td>
+              </tr>
+              <tr>
+                <td>2,600만원</td>
+                <td className="highlight">1,928,405원</td>
+                <td>2,166,667원</td>
+                <td>238,261원</td>
+              </tr>
+              <tr>
+                <td>2,700만원</td>
+                <td className="highlight">2,000,428원</td>
+                <td>2,250,000원</td>
+                <td>249,572원</td>
+              </tr>
+              <tr>
+                <td>2,800만원</td>
+                <td className="highlight">2,072,814원</td>
+                <td>2,333,333원</td>
+                <td>260,519원</td>
+              </tr>
+              <tr>
+                <td>2,900만원</td>
+                <td className="highlight">2,145,200원</td>
+                <td>2,416,667원</td>
+                <td>271,467원</td>
+              </tr>
+              <tr>
+                <td>3,000만원</td>
+                <td className="highlight">2,217,222원</td>
+                <td>2,500,000원</td>
+                <td>282,778원</td>
+              </tr>
+              <tr>
+                <td>3,100만원</td>
+                <td className="highlight">2,289,421원</td>
+                <td>2,583,333원</td>
+                <td>293,912원</td>
+              </tr>
+              <tr>
+                <td>3,200만원</td>
+                <td className="highlight">2,357,506원</td>
+                <td>2,666,667원</td>
+                <td>309,161원</td>
+              </tr>
+              <tr>
+                <td>3,300만원</td>
+                <td className="highlight">2,424,238원</td>
+                <td>2,750,000원</td>
+                <td>325,762원</td>
+              </tr>
+              <tr>
+                <td>3,400만원</td>
+                <td className="highlight">2,491,526원</td>
+                <td>2,833,333원</td>
+                <td>341,807원</td>
+              </tr>
+              <tr>
+                <td>3,500만원</td>
+                <td className="highlight">2,559,604원</td>
+                <td>2,916,667원</td>
+                <td>357,063원</td>
+              </tr>
+              <tr>
+                <td>3,600만원</td>
+                <td className="highlight">2,625,874원</td>
+                <td>3,000,000원</td>
+                <td>374,126원</td>
+              </tr>
+              <tr>
+                <td>3,700만원</td>
+                <td className="highlight">2,693,663원</td>
+                <td>3,083,333원</td>
+                <td>389,771원</td>
+              </tr>
+              <tr>
+                <td>3,800만원</td>
+                <td className="highlight">2,761,240원</td>
+                <td>3,166,667원</td>
+                <td>405,426원</td>
+              </tr>
+              <tr>
+                <td>3,900만원</td>
+                <td className="highlight">2,828,324원</td>
+                <td>3,250,000원</td>
+                <td>421,676원</td>
+              </tr>
+              <tr>
+                <td>4,000만원</td>
+                <td className="highlight">2,892,779원</td>
+                <td>3,333,333원</td>
+                <td>440,555원</td>
+              </tr>
+              <tr>
+                <td>4,100만원</td>
+                <td className="highlight">2,957,234원</td>
+                <td>3,416,667원</td>
+                <td>459,433원</td>
+              </tr>
+              <tr>
+                <td>4,200만원</td>
+                <td className="highlight">3,018,993원</td>
+                <td>3,500,000원</td>
+                <td>481,007원</td>
+              </tr>
+              <tr>
+                <td>4,300만원</td>
+                <td className="highlight">3,083,448원</td>
+                <td>3,583,333원</td>
+                <td>499,885원</td>
+              </tr>
+              <tr>
+                <td>4,400만원</td>
+                <td className="highlight">3,147,903원</td>
+                <td>3,666,667원</td>
+                <td>518,764원</td>
+              </tr>
+              <tr>
+                <td>4,500만원</td>
+                <td className="highlight">3,212,358원</td>
+                <td>3,750,000원</td>
+                <td>537,642원</td>
+              </tr>
+              <tr>
+                <td>4,600만원</td>
+                <td className="highlight">3,270,663원</td>
+                <td>3,833,333원</td>
+                <td>562,670원</td>
+              </tr>
+              <tr>
+                <td>4,700만원</td>
+                <td className="highlight">3,334,128원</td>
+                <td>3,916,667원</td>
+                <td>582,539원</td>
+              </tr>
+              <tr>
+                <td>4,800만원</td>
+                <td className="highlight">3,394,656원</td>
+                <td>4,000,000원</td>
+                <td>605,344원</td>
+              </tr>
+              <tr>
+                <td>4,900만원</td>
+                <td className="highlight">3,458,121원</td>
+                <td>4,083,333원</td>
+                <td>625,213원</td>
+              </tr>
+              <tr>
+                <td>5,000만원</td>
+                <td className="highlight">3,521,585원</td>
+                <td>4,166,667원</td>
+                <td>645,081원</td>
+              </tr>
+              <tr>
+                <td>5,100만원</td>
+                <td className="highlight">3,585,050원</td>
+                <td>4,250,000원</td>
+                <td>664,950원</td>
+              </tr>
+              <tr>
+                <td>5,200만원</td>
+                <td className="highlight">3,648,515원</td>
+                <td>4,333,333원</td>
+                <td>684,819원</td>
+              </tr>
+              <tr>
+                <td>5,300만원</td>
+                <td className="highlight">3,711,980원</td>
+                <td>4,416,667원</td>
+                <td>704,687원</td>
+              </tr>
+              <tr>
+                <td>5,400만원</td>
+                <td className="highlight">3,772,364원</td>
+                <td>4,500,000원</td>
+                <td>727,636원</td>
+              </tr>
+              <tr>
+                <td>5,500만원</td>
+                <td className="highlight">3,832,485원</td>
+                <td>4,583,333원</td>
+                <td>750,848원</td>
+              </tr>
+              <tr>
+                <td>5,600만원</td>
+                <td className="highlight">3,895,356원</td>
+                <td>4,666,667원</td>
+                <td>771,311원</td>
+              </tr>
+              <tr>
+                <td>5,700만원</td>
+                <td className="highlight">3,958,227원</td>
+                <td>4,750,000원</td>
+                <td>791,773원</td>
+              </tr>
+              <tr>
+                <td>5,800만원</td>
+                <td className="highlight">4,021,097원</td>
+                <td>4,833,333원</td>
+                <td>812,236원</td>
+              </tr>
+              <tr>
+                <td>5,900만원</td>
+                <td className="highlight">4,083,968원</td>
+                <td>4,916,667원</td>
+                <td>832,699원</td>
+              </tr>
+              <tr>
+                <td>6,000만원</td>
+                <td className="highlight">4,143,748원</td>
+                <td>5,000,000원</td>
+                <td>856,252원</td>
+              </tr>
+              <tr>
+                <td>6,100만원</td>
+                <td className="highlight">4,206,618원</td>
+                <td>5,083,333원</td>
+                <td>876,715원</td>
+              </tr>
+              <tr>
+                <td>6,200만원</td>
+                <td className="highlight">4,269,489원</td>
+                <td>5,166,667원</td>
+                <td>897,177원</td>
+              </tr>
+              <tr>
+                <td>6,300만원</td>
+                <td className="highlight">4,332,360원</td>
+                <td>5,250,000원</td>
+                <td>917,640원</td>
+              </tr>
+              <tr>
+                <td>6,400만원</td>
+                <td className="highlight">4,395,231원</td>
+                <td>5,333,333원</td>
+                <td>938,103원</td>
+              </tr>
+              <tr>
+                <td>6,500만원</td>
+                <td className="highlight">4,458,101원</td>
+                <td>5,416,667원</td>
+                <td>958,565원</td>
+              </tr>
+              <tr>
+                <td>6,600만원</td>
+                <td className="highlight">4,517,892원</td>
+                <td>5,500,000원</td>
+                <td>982,108원</td>
+              </tr>
+              <tr>
+                <td>6,700만원</td>
+                <td className="highlight">4,580,763원</td>
+                <td>5,583,333원</td>
+                <td>1,002,570원</td>
+              </tr>
+              <tr>
+                <td>6,800만원</td>
+                <td className="highlight">4,643,634원</td>
+                <td>5,666,667원</td>
+                <td>1,023,033원</td>
+              </tr>
+              <tr>
+                <td>6,900만원</td>
+                <td className="highlight">4,706,504원</td>
+                <td>5,750,000원</td>
+                <td>1,043,496원</td>
+              </tr>
+              <tr>
+                <td>7,000만원</td>
+                <td className="highlight">4,769,375원</td>
+                <td>5,833,333원</td>
+                <td>1,063,958원</td>
+              </tr>
+              <tr>
+                <td>7,100만원</td>
+                <td className="highlight">4,808,563원</td>
+                <td>5,916,667원</td>
+                <td>1,108,104원</td>
+              </tr>
+              <tr>
+                <td>7,200만원</td>
+                <td className="highlight">4,858,828원</td>
+                <td>6,000,000원</td>
+                <td>1,141,172원</td>
+              </tr>
+              <tr>
+                <td>7,300만원</td>
+                <td className="highlight">4,914,075원</td>
+                <td>6,083,333원</td>
+                <td>1,169,258원</td>
+              </tr>
+              <tr>
+                <td>7,400만원</td>
+                <td className="highlight">4,969,334원</td>
+                <td>6,166,667원</td>
+                <td>1,197,332원</td>
+              </tr>
+              <tr>
+                <td>7,500만원</td>
+                <td className="highlight">5,024,582원</td>
+                <td>6,250,000원</td>
+                <td>1,225,418원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="table-note">
+          ⚠️ 위 금액은 2026년 기준 참고용이며, 비과세 항목, 부양가족 수,
+          자녀세액공제 등에 따라 실제 실수령액은 달라질 수 있습니다.
+        </p>
+      </section>
+
+      {/* 프리랜서 참고표 */}
+      <section className="salary-table-section freelancer">
+        <h2>💼 프리랜서 실수령액 참고표</h2>
+        <p className="table-description">
+          계약금액 기준 3.3% 원천징수 (소득세 3% + 지방소득세 0.3%)
+        </p>
+
+        <div className="table-wrapper">
+          <table className="salary-table">
+            <thead>
+              <tr>
+                <th>계약금액</th>
+                <th>원천징수 (3.3%)</th>
+                <th>실수령액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2,500,000원</td>
+                <td>82,500원</td>
+                <td className="highlight">2,417,500원</td>
+              </tr>
+              <tr>
+                <td>3,000,000원</td>
+                <td>99,000원</td>
+                <td className="highlight">2,901,000원</td>
+              </tr>
+              <tr>
+                <td>3,500,000원</td>
+                <td>115,500원</td>
+                <td className="highlight">3,384,500원</td>
+              </tr>
+              <tr>
+                <td>4,000,000원</td>
+                <td>132,000원</td>
+                <td className="highlight">3,868,000원</td>
+              </tr>
+              <tr>
+                <td>4,500,000원</td>
+                <td>148,500원</td>
+                <td className="highlight">4,351,500원</td>
+              </tr>
+              <tr>
+                <td>5,000,000원</td>
+                <td>165,000원</td>
+                <td className="highlight">4,835,000원</td>
+              </tr>
+              <tr>
+                <td>5,500,000원</td>
+                <td>181,500원</td>
+                <td className="highlight">5,318,500원</td>
+              </tr>
+              <tr>
+                <td>6,000,000원</td>
+                <td>198,000원</td>
+                <td className="highlight">5,802,000원</td>
+              </tr>
+              <tr>
+                <td>6,500,000원</td>
+                <td>214,500원</td>
+                <td className="highlight">6,285,500원</td>
+              </tr>
+              <tr>
+                <td>7,000,000원</td>
+                <td>231,000원</td>
+                <td className="highlight">6,769,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="table-note">
+          ⚠️ 프리랜서는 4대 보험이 포함되지 않으며, 종합소득세 신고 시 추가
+          세금이 발생할 수 있습니다.
+        </p>
+      </section>
+
+      {/* FAQ 섹션 */}
+      <section className="faq-section">
+        <h2>❓ 자주 묻는 질문</h2>
+
+        <div className="faq-item">
+          <h3>Q. 4대 보험은 정확히 무엇인가요?</h3>
+          <p>
+            A. 국민연금(4.5%), 건강보험(3.545%), 장기요양보험(건강보험료의
+            12.95%), 고용보험(0.9%)을 합쳐 4대 보험이라고 하며, 직장인은
+            월급에서 자동 공제됩니다.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h3>Q. 부양가족이 많으면 실수령액이 늘어나나요?</h3>
+          <p>
+            A. 네. 부양가족 수가 많을수록 소득세 공제가 커져서 세금이 줄어들고
+            실수령액이 증가합니다. 계산기에서 부양가족 수를 조정해보세요.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h3>Q. 프리랜서도 4대 보험을 내나요?</h3>
+          <p>
+            A. 프리랜서는 계약금액에서 3.3% 원천징수만 제외되며, 4대 보험은
+            지역가입자로 별도 가입해야 합니다.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h3>Q. 비과세 항목은 무엇인가요?</h3>
+          <p>
+            A. 식대(월 20만원), 차량유지비(월 20만원), 자녀보육수당 등이 비과세
+            항목입니다. 비과세액이 많을수록 실수령액이 증가합니다.
+          </p>
+        </div>
+      </section>
+
       {/* ========== 광고 6: 푸터 광고 ========== */}
       <AdSense
         slot="4153151665" // 👈 본인 광고 슬롯 ID
