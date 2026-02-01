@@ -1344,6 +1344,607 @@ function Home() {
             </p>
           </div>
         </article>
+
+        {/* 블로그 글 2: 연말정산 가이드 */}
+        <article
+          className="blog-article"
+          style={{
+            background: "#f8f9fa",
+            padding: "30px",
+            borderRadius: "12px",
+            marginBottom: "20px",
+          }}
+        >
+          <h3 style={{ color: "#2c3e50", marginBottom: "15px" }}>
+            📋 2026년 연말정산 완벽 가이드 (2025년 귀속)
+          </h3>
+
+          <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "15px" }}>
+            2026년 1~2월에 진행되는 연말정산은 2025년 한 해 동안의 소득을
+            정산하는 절차입니다. 13월의 보너스를 받기 위한 핵심 정보를
+            알아보세요.
+          </p>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#3498db", marginBottom: "15px" }}>
+              📅 2026년 연말정산 일정
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                2025년 11월 중순: 미리보기 서비스
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>1~9월 지출 기준으로 예상 환급액 확인</li>
+                <li>홈택스에서 미리 확인 가능</li>
+                <li>부족한 공제 항목 12월까지 추가 준비</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                2026년 1월 15일: 간소화 자료 오픈
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>국세청 홈택스에서 공제 자료 일괄 조회</li>
+                <li>의료비, 교육비, 카드 사용액 등 자동 집계</li>
+                <li>누락된 항목은 별도 증빙서류 준비</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                2026년 2월: 회사 제출 및 환급
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>회사 일정에 맞춰 자료 제출</li>
+                <li>2월 급여와 함께 환급 또는 추가 납부</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#3498db", marginBottom: "15px" }}>
+              ✨ 2026년 달라진 주요 공제 항목
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#e74c3c" }}>
+                🔴 자녀 세액공제 확대
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>기존: 1인당 15만원 → 변경: 25만원</li>
+                <li>2자녀: 50만원, 3자녀: 105만원</li>
+                <li>
+                  <strong>자녀가 많을수록 환급액 대폭 증가!</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#f39c12" }}>
+                🟠 헬스장·수영장 공제 신설
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>
+                  <strong>2026년 처음 도입!</strong>
+                </li>
+                <li>체육시설 이용료 30% 소득공제</li>
+                <li>헬스장, 수영장 등록비 및 이용료 해당</li>
+                <li>연간 300만원 한도 (강습비 별도 구분 시 절반만 인정)</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#27ae60" }}>
+                🟢 청약저축 공제 확대
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>기존: 세대주만 가능</li>
+                <li>변경: 배우자도 공제 가능</li>
+                <li>무주택 세대 해당, 연 240만원 한도</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong style={{ color: "#3498db" }}>
+                🔵 고향사랑기부금 확대
+              </strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>10만원까지 100% 세액공제</li>
+                <li>10만원 초과분은 16.5% 공제</li>
+                <li>특별재난지역은 33% 공제</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#3498db", marginBottom: "15px" }}>
+              💰 환급액 늘리는 연말 전략
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong>1. 신용카드 vs 체크카드 전략적 사용</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>총급여의 25%까지는 신용카드 사용</li>
+                <li>25% 이후부터는 체크카드/현금영수증 사용</li>
+                <li>체크카드가 공제율 더 높음 (30% vs 15%)</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong>2. 연금저축·IRP 12월까지 추가 납입</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>연 900만원까지 세액공제 (최대 148.5만원)</li>
+                <li>연말에 몰아서 납입해도 공제 인정</li>
+                <li>장기 절세 효과 + 노후 준비 동시 해결</li>
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong>3. 의료비는 가족 몰아주기</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>소득이 가장 높은 사람 카드로 결제</li>
+                <li>총급여 3% 초과분부터 공제</li>
+                <li>병원비, 약국, 안경, 보청기 모두 해당</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong>4. 12월 31일까지 지출한 내역만 인정</strong>
+              <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                <li>교육비, 기부금 등 미리 내면 올해 공제</li>
+                <li>헬스장 등록도 연내 결제 시 공제 가능</li>
+                <li>
+                  <strong>딱 1주일 남았다면 지금 바로 실행!</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "#fff3cd",
+              padding: "15px",
+              borderRadius: "8px",
+              borderLeft: "4px solid #ffc107",
+            }}
+          >
+            <strong>📌 핵심 요약</strong>
+            <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+              2026년 연말정산은 <strong>자녀·헬스장·청약 공제 확대</strong>가
+              핵심입니다.
+              <br />
+              11월 미리보기로 현황 파악 → 12월 부족 항목 추가 → 1월 자료 제출
+              <br />위 계산기로 내 연봉 기준 실수령액을 먼저 확인하고,
+              연말정산으로 더 많이 돌려받으세요!
+            </p>
+          </div>
+        </article>
+
+        {/* 블로그 글 3: 실수령액 늘리는 방법 */}
+        <article
+          className="blog-article"
+          style={{
+            background: "#f8f9fa",
+            padding: "30px",
+            borderRadius: "12px",
+            marginBottom: "20px",
+          }}
+        >
+          <h3 style={{ color: "#2c3e50", marginBottom: "15px" }}>
+            💸 실수령액 늘리는 5가지 확실한 방법
+          </h3>
+
+          <p style={{ lineHeight: "1.8", color: "#555", marginBottom: "15px" }}>
+            같은 연봉이라도 실수령액은 사람마다 다릅니다. 4대 보험과 세금 공제를
+            전략적으로 활용하면 월 수십만원까지 차이가 납니다. 지금 바로 실천할
+            수 있는 5가지 방법을 알아보세요!
+          </p>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#e74c3c", marginBottom: "15px" }}>
+              1️⃣ 비과세 항목 최대한 활용하기
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>💡 비과세란?</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                세금과 4대 보험이 부과되지 않는 급여 항목입니다. 비과세가
+                많을수록 실수령액이 늘어납니다!
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#f0f9ff",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong style={{ color: "#0c4a6e" }}>주요 비과세 항목</strong>
+              <ul
+                style={{
+                  marginTop: "8px",
+                  paddingLeft: "20px",
+                  lineHeight: "1.8",
+                }}
+              >
+                <li>
+                  <strong>식대: 월 20만원</strong> (가장 보편적)
+                </li>
+                <li>
+                  <strong>차량유지비: 월 20만원</strong> (업무용 차량)
+                </li>
+                <li>
+                  <strong>자녀보육수당: 월 10만원</strong> (6세 이하 자녀 1인당)
+                </li>
+                <li>
+                  <strong>연구활동비: 월 20만원</strong> (연구직)
+                </li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                background: "#fff8e1",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong>🎯 실전 예시</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                연봉 4,000만원 직장인이{" "}
+                <strong>식대 20만원 + 차량 20만원</strong>을 비과세로 받으면?
+                <br />→ 월 40만원 × 12개월 = 연 480만원 비과세
+                <br />→ <strong>실수령액 연간 약 40~50만원 증가!</strong>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#f39c12", marginBottom: "15px" }}>
+              2️⃣ 부양가족 등록으로 세금 줄이기
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                부양가족이 많을수록 소득세 감소
+              </strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                배우자, 자녀, 부모님 등 부양가족을 등록하면 간이세액이 낮아져
+                매달 원천징수되는 세금이 줄어듭니다.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#f0f9ff",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong style={{ color: "#0c4a6e" }}>
+                부양가족 기준 (2026년)
+              </strong>
+              <ul
+                style={{
+                  marginTop: "8px",
+                  paddingLeft: "20px",
+                  lineHeight: "1.8",
+                }}
+              >
+                <li>배우자: 연소득 100만원 이하</li>
+                <li>직계존속 (부모님): 만 60세 이상, 연소득 100만원 이하</li>
+                <li>자녀: 만 20세 이하, 연소득 100만원 이하</li>
+                <li>형제자매: 만 20세 이하 또는 60세 이상</li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                background: "#fff8e1",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong>🎯 실수령액 차이 (연봉 4천만원 기준)</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                부양가족 1명 (본인만): 월 실수령액 약 2,892,779원
+                <br />
+                부양가족 3명 (배우자+자녀): 월 실수령액 약 2,970,000원
+                <br />→ <strong>월 약 8만원, 연간 약 96만원 차이!</strong>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#27ae60", marginBottom: "15px" }}>
+              3️⃣ 연금저축·IRP로 세액공제 받기
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                노후 준비 + 세금 절약 동시에
+              </strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                연금저축과 IRP(개인형퇴직연금)에 납입하면 최대 16.5% 세액공제를
+                받을 수 있습니다. 장기 투자로 노후도 대비하고 당장 세금도 줄이는
+                일석이조!
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#f0f9ff",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong style={{ color: "#0c4a6e" }}>
+                세액공제 한도 (2026년)
+              </strong>
+              <ul
+                style={{
+                  marginTop: "8px",
+                  paddingLeft: "20px",
+                  lineHeight: "1.8",
+                }}
+              >
+                <li>
+                  총급여 5,500만원 이하:{" "}
+                  <strong>연 900만원까지 16.5% 공제</strong>
+                </li>
+                <li>총급여 5,500만원 초과: 연 900만원까지 13.2% 공제</li>
+                <li>연금저축 600만원 + IRP 300만원 조합 가능</li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                background: "#fff8e1",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong>🎯 실전 계산</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                연 900만원 납입 시 (5,500만원 이하):
+                <br />→ 세액공제: 900만원 × 16.5% ={" "}
+                <strong>148.5만원 환급</strong>
+                <br />→ 실질 부담금: 750만원으로 900만원 투자 효과
+                <br />→ <strong>매년 150만원 가까이 절세!</strong>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#3498db", marginBottom: "15px" }}>
+              4️⃣ 중소기업 취업 청년 감면 활용
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                만 15~34세 청년이라면 반드시 확인!
+              </strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                중소기업에 취업한 청년은 소득세를 최대 90%까지 감면받을 수
+                있습니다. 5년간 최대 연 200만원까지 세금을 줄일 수 있어요.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#f0f9ff",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong style={{ color: "#0c4a6e" }}>감면 대상</strong>
+              <ul
+                style={{
+                  marginTop: "8px",
+                  paddingLeft: "20px",
+                  lineHeight: "1.8",
+                }}
+              >
+                <li>만 15~34세 청년 (군 복무 기간 최대 6년 추가 인정)</li>
+                <li>중소기업 취업자</li>
+                <li>취업일로부터 5년간 적용 (1~3년차 90%, 4~5년차 50% 감면)</li>
+                <li>연간 최대 200만원 한도</li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                background: "#fff8e1",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong>🎯 실수령액 증가</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                연봉 3,500만원 청년이 감면 받으면:
+                <br />→ 연간 약 150~200만원 세금 감면
+                <br />→ <strong>월 실수령액 약 12~17만원 증가!</strong>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "8px",
+              marginBottom: "15px",
+            }}
+          >
+            <h4 style={{ color: "#9b59b6", marginBottom: "15px" }}>
+              5️⃣ 연말정산 꼼꼼히 챙기기
+            </h4>
+
+            <div style={{ marginBottom: "15px" }}>
+              <strong style={{ color: "#2c3e50" }}>
+                13월의 월급은 연말정산으로
+              </strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                매달 원천징수된 세금은 어림짐작 금액입니다. 연말정산 때 정확히
+                계산해서 더 낸 세금을 돌려받거나, 덜 낸 세금을 추가 납부하게
+                됩니다.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#f0f9ff",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong style={{ color: "#0c4a6e" }}>
+                놓치지 말아야 할 공제 항목
+              </strong>
+              <ul
+                style={{
+                  marginTop: "8px",
+                  paddingLeft: "20px",
+                  lineHeight: "1.8",
+                }}
+              >
+                <li>신용카드·체크카드 사용액 (총급여 25% 초과분)</li>
+                <li>의료비 (총급여 3% 초과분, 한도 없음)</li>
+                <li>교육비 (본인, 자녀 학원비 등)</li>
+                <li>월세 세액공제 (무주택 세대주, 연 750만원 한도)</li>
+                <li>
+                  <strong>헬스장·수영장 이용료 (2026년 신설!)</strong>
+                </li>
+                <li>기부금 (15~30% 공제)</li>
+              </ul>
+            </div>
+
+            <div
+              style={{
+                background: "#fff8e1",
+                padding: "15px",
+                borderRadius: "8px",
+                marginTop: "12px",
+              }}
+            >
+              <strong>🎯 연말정산 환급 사례</strong>
+              <p style={{ marginTop: "8px", lineHeight: "1.7" }}>
+                연봉 5,000만원, 맞벌이 부부, 자녀 2명:
+                <br />→ 의료비 200만원 + 교육비 300만원 + 카드 사용 충분
+                <br />→ <strong>환급액: 약 150~200만원 이상 가능!</strong>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "#e8f5e9",
+              padding: "20px",
+              borderRadius: "8px",
+              borderLeft: "4px solid #27ae60",
+            }}
+          >
+            <strong style={{ fontSize: "1.1rem", color: "#1e8449" }}>
+              💰 종합 정리: 이것만 기억하세요!
+            </strong>
+            <ul
+              style={{
+                marginTop: "12px",
+                lineHeight: "1.9",
+                paddingLeft: "20px",
+              }}
+            >
+              <li>
+                <strong>비과세 항목</strong> 최대한 활용 (식대 20만원은 기본)
+              </li>
+              <li>
+                <strong>부양가족 등록</strong>으로 매달 세금 줄이기
+              </li>
+              <li>
+                <strong>연금저축·IRP</strong>로 노후 준비 + 세금 절약
+              </li>
+              <li>
+                <strong>청년 감면</strong> 대상이면 반드시 신청
+              </li>
+              <li>
+                <strong>연말정산</strong> 공제 항목 하나하나 꼼꼼히 챙기기
+              </li>
+            </ul>
+            <p
+              style={{
+                marginTop: "15px",
+                lineHeight: "1.7",
+                fontSize: "0.95rem",
+                color: "#27ae60",
+              }}
+            >
+              위 계산기로 내 연봉의 실수령액을 먼저 확인하고, 5가지 방법으로
+              실수령액을 늘려보세요! 같은 연봉이라도 전략에 따라 월 수십만원
+              차이가 날 수 있습니다.
+            </p>
+          </div>
+        </article>
       </section>
 
       {/* ========== 광고 6: 푸터 광고 ========== */}
