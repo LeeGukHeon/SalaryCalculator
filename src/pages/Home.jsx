@@ -323,19 +323,19 @@ function Home() {
                   </span>
                 </div>
                 <div className="detail-row-breakdown">
-                  <span>└ 국민연금 (4.5%)</span>
+                  <span>└ 국민연금 (4.75%)</span>
                   <span>
                     {(result.data.nationalPension || 0).toLocaleString()} 원
                   </span>
                 </div>
                 <div className="detail-row-breakdown">
-                  <span>└ 건강보험 (3.545%)</span>
+                  <span>└ 건강보험 (3.595%)</span>
                   <span>
                     {(result.data.healthInsurance || 0).toLocaleString()} 원
                   </span>
                 </div>
                 <div className="detail-row-breakdown">
-                  <span>└ 장기요양보험 (0.9182%)</span>
+                  <span>└ 장기요양보험 (건강보험의 13.14%)</span>
                   <span>
                     {(result.data.longTermCare || 0).toLocaleString()} 원
                   </span>
@@ -1038,8 +1038,8 @@ function Home() {
         <div className="faq-item">
           <h3>Q. 4대 보험은 정확히 무엇인가요?</h3>
           <p>
-            A. 국민연금(4.5%), 건강보험(3.545%), 장기요양보험(건강보험료의
-            12.95%), 고용보험(0.9%)을 합쳐 4대 보험이라고 하며, 직장인은
+            A. 국민연금(4.75%), 건강보험(3.595%), 장기요양보험(건강보험료의
+            13.14%), 고용보험(0.9%)을 합쳐 4대 보험이라고 하며, 직장인은
             월급에서 자동 공제됩니다.
           </p>
         </div>
