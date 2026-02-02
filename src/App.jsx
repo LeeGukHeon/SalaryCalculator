@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Guide from "./pages/Guide";
-import SalaryInfo from "./pages/SalaryInfo"; // 🆕 추가
+import SalaryInfo from "./pages/SalaryInfo";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
@@ -12,11 +12,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* 🆕 헤더/네비게이션 추가 */}
+        {/* 헤더/네비게이션 */}
         <header
           style={{
             background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            padding: "20px 0",
+            padding: "15px 0", // 패딩 살짝 조정
             boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
             position: "sticky",
             top: 0,
@@ -42,14 +42,19 @@ function App() {
                 textDecoration: "none",
                 fontSize: "1.4rem",
                 fontWeight: "bold",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
               }}
             >
               💰 실수령액 계산기
             </Link>
+
             <nav
               style={{
                 display: "flex",
                 gap: "20px",
+                alignItems: "center",
                 flexWrap: "wrap",
               }}
             >
@@ -58,12 +63,13 @@ function App() {
                 style={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "1rem",
                   fontWeight: "500",
-                  transition: "opacity 0.3s",
+                  fontSize: "0.95rem",
+                  opacity: 0.9,
+                  transition: "opacity 0.2s",
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                onMouseEnter={(e) => (e.target.style.opacity = "1")}
+                onMouseLeave={(e) => (e.target.style.opacity = "0.9")}
               >
                 계산기
               </Link>
@@ -72,71 +78,62 @@ function App() {
                 style={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "1rem",
                   fontWeight: "500",
-                  transition: "opacity 0.3s",
+                  fontSize: "0.95rem",
+                  opacity: 0.9,
+                  transition: "opacity 0.2s",
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                onMouseEnter={(e) => (e.target.style.opacity = "1")}
+                onMouseLeave={(e) => (e.target.style.opacity = "0.9")}
               >
-                📊 2026년 정보
+                2026년 정보
               </Link>
               <Link
                 to="/guide"
                 style={{
                   color: "white",
                   textDecoration: "none",
-                  fontSize: "1rem",
                   fontWeight: "500",
-                  transition: "opacity 0.3s",
+                  fontSize: "0.95rem",
+                  opacity: 0.9,
+                  transition: "opacity 0.2s",
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                onMouseEnter={(e) => (e.target.style.opacity = "1")}
+                onMouseLeave={(e) => (e.target.style.opacity = "0.9")}
               >
-                📖 사용가이드
+                사용가이드
               </Link>
-              <Link
-                to="/privacy"
+
+              {/* 🔥 [추가] 대출이자계산기 홍보 버튼 (강조 스타일) */}
+              <a
+                href="https://www.loancalc2026.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
-                  color: "white",
+                  backgroundColor: "#ffd700", // 눈에 띄는 노란색
+                  color: "#333", // 가독성 좋은 짙은 글자
                   textDecoration: "none",
-                  fontSize: "1rem",
-                  fontWeight: "500",
-                  transition: "opacity 0.3s",
+                  padding: "8px 16px",
+                  borderRadius: "20px",
+                  fontWeight: "bold",
+                  fontSize: "0.9rem",
+                  boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
+                  transition: "transform 0.2s, background-color 0.2s",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "5px",
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
-              >
-                개인정보
-              </Link>
-              <Link
-                to="/terms"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                  fontWeight: "500",
-                  transition: "opacity 0.3s",
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.backgroundColor = "#ffea00";
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
-              >
-                이용약관
-              </Link>
-              <Link
-                to="/contact"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                  fontWeight: "500",
-                  transition: "opacity 0.3s",
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.backgroundColor = "#ffd700";
                 }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.8")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
               >
-                문의
-              </Link>
+                🏠 대출이자 계산기
+              </a>
             </nav>
           </div>
         </header>
