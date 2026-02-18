@@ -1,5 +1,13 @@
-// src/pages/Terms.jsx
+import usePageMeta from "../hooks/usePageMeta";
+
 function Terms() {
+  usePageMeta({
+    title: "이용약관 | 2026년 실수령액 계산기",
+    description:
+      "2026년 실수령액 계산기 서비스 이용 조건, 면책 조항, 저작권 및 광고 정책 등 주요 약관 내용을 확인하세요.",
+    canonicalPath: "/terms",
+  });
+
   return (
     <div className="container">
       <div className="card" style={{ maxWidth: "900px", margin: "40px auto" }}>

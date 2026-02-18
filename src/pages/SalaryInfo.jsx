@@ -2,8 +2,14 @@
 import { Link } from "react-router-dom";
 import AdSense from "../components/AdSense";
 import "../styles/salaryInfo.css";
+import usePageMeta from "../hooks/usePageMeta";
 
 function SalaryInfo() {
+  usePageMeta({
+    title: "2026년 연봉·세율·4대보험 최신 정보 총정리",
+    description: "2026년 국민연금, 건강보험, 장기요양보험, 고용보험 요율과 최저임금·세율 변경사항을 표와 예시로 상세 정리했습니다.",
+    canonicalPath: "/info",
+  });
   return (
     <div className="container">
       <div className="card">
@@ -19,11 +25,7 @@ function SalaryInfo() {
         </div>
 
         {/* 광고 1 */}
-        <AdSense
-          slot="3434966366"
-          format="auto"
-          style={{ marginBottom: "24px" }}
-        />
+        <AdSense slot="3434966366" format="auto" style={{ marginBottom: "20px" }} />
 
         {/* 2026년 주요 변경사항 */}
         <section className="info-section highlight-section">
@@ -101,11 +103,6 @@ function SalaryInfo() {
         </section>
 
         {/* 광고 2 */}
-        <AdSense
-          slot="9808803020"
-          format="auto"
-          style={{ margin: "30px auto", maxWidth: "336px" }}
-        />
 
         {/* 2026년 4대보험 요율 */}
         <section className="info-section">
@@ -263,11 +260,6 @@ function SalaryInfo() {
         </section>
 
         {/* 광고 3 */}
-        <AdSense
-          slot="6779315005"
-          format="auto"
-          style={{ margin: "30px auto" }}
-        />
 
         {/* 소득세율 구간 */}
         <section className="info-section">
@@ -443,11 +435,6 @@ function SalaryInfo() {
         </section>
 
         {/* 광고 4 */}
-        <AdSense
-          slot="5466233337"
-          format="auto"
-          style={{ margin: "30px auto", maxWidth: "336px" }}
-        />
 
         {/* 비과세 항목 */}
         <section className="info-section">
@@ -506,6 +493,29 @@ function SalaryInfo() {
           </div>
         </section>
 
+        <section className="info-section">
+          <h2>📌 데이터 출처 및 검수 방식</h2>
+          <p>
+            아래 정보는 2026년 공표된 요율/세율 기준을 바탕으로 구성했으며,
+            실제 적용시기는 정부 고시 일정에 따라 달라질 수 있습니다.
+          </p>
+          <ul>
+            <li>국민연금·건강보험·고용보험 고시 요율 기준</li>
+            <li>근로소득 간이세액표 기준(월별 원천징수 추정)</li>
+            <li>프리랜서 3.3% 원천징수 일반 기준</li>
+          </ul>
+          <div className="source-links">
+            <a href="https://www.nps.or.kr" target="_blank" rel="noopener noreferrer">국민연금공단</a>
+            <a href="https://www.nhis.or.kr" target="_blank" rel="noopener noreferrer">국민건강보험</a>
+            <a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">고용노동부</a>
+            <a href="https://www.nts.go.kr" target="_blank" rel="noopener noreferrer">국세청</a>
+          </div>
+          <div className="update-log-item">
+            <strong>최종 검토일: 2026-02-10</strong>
+            <p>보험료율/최저임금/세율 요약표 재검수 및 설명 문구 보완 완료</p>
+          </div>
+        </section>
+
         {/* CTA */}
         <div className="cta-section">
           <h3>💰 내 연봉 실수령액을 정확히 계산해보세요!</h3>
@@ -515,12 +525,7 @@ function SalaryInfo() {
           </Link>
         </div>
 
-        {/* 광고 5 */}
-        <AdSense
-          slot="4153151665"
-          format="auto"
-          style={{ marginTop: "30px" }}
-        />
+        <AdSense slot="4153151665" format="auto" style={{ marginTop: "24px" }} />
       </div>
     </div>
   );
