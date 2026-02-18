@@ -4,8 +4,37 @@ import { calcEmployeeSalary } from "../utils/calc/employee";
 import { calcFreelancerIncome } from "../utils/calc/freelancer";
 import { toNumber, handleNumberInput } from "../utils/helpers";
 import AdSense from "../components/AdSense";
+import usePageMeta from "../hooks/usePageMeta";
 
 function Home() {
+  usePageMeta({
+    title: "2026년 실수령액 계산기 | 직장인·프리랜서 급여 계산",
+    description:
+      "직장인 4대보험·간이세액표, 프리랜서 3.3% 원천징수까지 반영한 2026년 실수령액 계산기. 계산 근거와 절세 가이드까지 한 번에 확인하세요.",
+    canonicalPath: "/",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "실수령액 계산 결과는 실제 급여와 완전히 같나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "본 계산기는 2026년 기준 세율과 보험료율을 바탕으로 한 예상값입니다. 회사의 복리후생, 추가 공제, 연말정산 결과에 따라 실제 금액은 달라질 수 있습니다.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "프리랜서 계산은 어떤 방식으로 계산하나요?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "프리랜서 탭은 월 수입을 기준으로 3.3% 원천징수(소득세 3% + 지방소득세 0.3%)를 계산합니다. 지역가입 4대보험은 별도 안내로 제공합니다.",
+          },
+        },
+      ],
+    },
+  });
   // ========== 공통 State ==========
   const [calcType, setCalcType] = useState("employee"); // "employee" or "freelancer"
   const [result, setResult] = useState(null);
@@ -115,11 +144,7 @@ function Home() {
         </p>
 
         {/* ========== 광고 1: 상단 배너 ========== */}
-        <AdSense
-          slot="3434966366" // 👈 본인 광고 슬롯 ID
-          format="auto"
-          style={{ marginBottom: "24px" }}
-        />
+        <AdSense slot="3434966366" format="auto" style={{ marginBottom: "20px" }} />
 
         {/* ========== 탭 전환 ========== */}
         <div className="tab-container">
@@ -205,11 +230,6 @@ function Home() {
             {error && <div className="error-message">{error}</div>}
 
             {/* ========== 광고 2: 입력 하단 (계산 전) ========== */}
-            <AdSense
-              slot="9808803020" // 👈 본인 광고 슬롯 ID
-              format="auto"
-              style={{ margin: "20px auto", maxWidth: "336px" }}
-            />
 
             <button onClick={handleCalculate} className="calculate-btn">
               💰 실수령액 계산하기
@@ -238,11 +258,6 @@ function Home() {
             {error && <div className="error-message">{error}</div>}
 
             {/* ========== 광고 2: 입력 하단 (계산 전) ========== */}
-            <AdSense
-              slot="9808803020" // 👈 본인 광고 슬롯 ID
-              format="auto"
-              style={{ margin: "20px auto", maxWidth: "336px" }}
-            />
 
             <button onClick={handleCalculate} className="calculate-btn">
               💰 실수령액 계산하기
@@ -266,11 +281,6 @@ function Home() {
         {result && result.type === "employee" && (
           <div className="result-section">
             {/* ========== 광고 3: 결과 상단 ========== */}
-            <AdSense
-              slot="6779315005" // 👈 본인 광고 슬롯 ID
-              format="auto"
-              style={{ marginBottom: "24px" }}
-            />
 
             {/* 요약 카드 */}
             <div className="result-summary">
@@ -377,11 +387,6 @@ function Home() {
               </div>
 
               {/* ========== 광고 4: 상세 중간 ========== */}
-              <AdSense
-                slot="5466233337" // 👈 본인 광고 슬롯 ID
-                format="auto"
-                style={{ margin: "24px auto", maxWidth: "336px" }}
-              />
 
               {/* 연간 정보 */}
               <div className="annual-info">
@@ -449,11 +454,6 @@ function Home() {
               </div>
 
               {/* ========== 광고 5: 결과 하단 ========== */}
-              <AdSense
-                slot="9021900195" // 👈 본인 광고 슬롯 ID
-                format="auto"
-                style={{ marginTop: "24px" }}
-              />
             </div>
           </div>
         )}
@@ -462,11 +462,6 @@ function Home() {
         {result && result.type === "freelancer" && (
           <div className="result-section">
             {/* ========== 광고 3: 결과 상단 ========== */}
-            <AdSense
-              slot="6779315005" // 👈 본인 광고 슬롯 ID
-              format="auto"
-              style={{ marginBottom: "24px" }}
-            />
 
             {/* 요약 카드 */}
             <div className="result-summary">
@@ -536,11 +531,6 @@ function Home() {
               </div>
 
               {/* ========== 광고 4: 상세 중간 ========== */}
-              <AdSense
-                slot="5466233337" // 👈 본인 광고 슬롯 ID
-                format="auto"
-                style={{ margin: "24px auto", maxWidth: "336px" }}
-              />
 
               {/* 연간 정보 */}
               <div className="annual-info">
@@ -596,11 +586,6 @@ function Home() {
               </div>
 
               {/* ========== 광고 5: 결과 하단 ========== */}
-              <AdSense
-                slot="9021900195" // 👈 본인 광고 슬롯 ID
-                format="auto"
-                style={{ marginTop: "24px" }}
-              />
             </div>
           </div>
         )}
@@ -1947,12 +1932,45 @@ function Home() {
         </article>
       </section>
 
-      {/* ========== 광고 6: 푸터 광고 ========== */}
-      <AdSense
-        slot="4153151665" // 👈 본인 광고 슬롯 ID
-        format="auto"
-        style={{ marginTop: "30px" }}
-      />
+      <section className="content-proof-section">
+        <h2>📚 계산 근거 및 데이터 출처</h2>
+        <p className="description" style={{ marginBottom: "14px" }}>
+          본 계산기는 2026년 기준 4대보험 요율, 간이세액표 기준, 프리랜서 원천징수 규정을
+          반영한 참고용 시뮬레이션 도구입니다. 실제 급여는 회사별 공제 항목 및 연말정산 결과에
+          따라 달라질 수 있습니다.
+        </p>
+        <ul>
+          <li>국민연금, 건강보험, 장기요양보험, 고용보험 요율 반영</li>
+          <li>직장인: 간이세액표 기반 월 예상 세액 계산</li>
+          <li>프리랜서: 3.3% 원천징수(소득세 3% + 지방소득세 0.3%) 계산</li>
+          <li>비과세/부양가족/청년감면 항목을 분리 반영</li>
+        </ul>
+        <div className="source-links">
+          <a href="https://www.nps.or.kr" target="_blank" rel="noopener noreferrer">국민연금공단</a>
+          <a href="https://www.nhis.or.kr" target="_blank" rel="noopener noreferrer">국민건강보험</a>
+          <a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">고용노동부</a>
+          <a href="https://www.nts.go.kr" target="_blank" rel="noopener noreferrer">국세청</a>
+        </div>
+      </section>
+
+      <section className="update-log-section">
+        <h2>🛠️ 콘텐츠 업데이트 내역</h2>
+        <div className="update-log-item">
+          <strong>2026-02-10</strong>
+          <p>광고 밀도를 축소하고 계산/정보 콘텐츠 영역을 확대했습니다.</p>
+        </div>
+        <div className="update-log-item">
+          <strong>2026-02-08</strong>
+          <p>FAQ 구조화 데이터 및 페이지별 메타데이터를 개선했습니다.</p>
+        </div>
+        <div className="update-log-item">
+          <strong>2026-02-01</strong>
+          <p>2026년 보험요율/세율 기준으로 계산 로직과 안내 문구를 갱신했습니다.</p>
+        </div>
+        <p className="help-text">최종 검토일: 2026-02-10 · 다음 정기 점검: 매월 1주차</p>
+      </section>
+
+      <AdSense slot="4153151665" format="auto" style={{ marginTop: "24px" }} />
     </div>
   );
 }
