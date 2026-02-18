@@ -2,8 +2,14 @@
 import { Link } from "react-router-dom";
 import AdSense from "../components/AdSense";
 import "../styles/guide.css";
+import usePageMeta from "../hooks/usePageMeta";
 
 function Guide() {
+  usePageMeta({
+    title: "2026년 실수령액 계산기 사용 가이드 | 입력 항목부터 절세 팁까지",
+    description: "직장인·프리랜서 실수령액 계산기를 정확히 사용하는 방법을 단계별로 정리했습니다. 연봉 입력, 비과세 항목, 결과 해석까지 한 번에 확인하세요.",
+    canonicalPath: "/guide",
+  });
   return (
     <div className="container">
       <div className="card">
@@ -19,11 +25,7 @@ function Guide() {
         </div>
 
         {/* 광고 1: 상단 */}
-        <AdSense
-          slot="3434966366"
-          format="auto"
-          style={{ marginBottom: "24px" }}
-        />
+        <AdSense slot="3434966366" format="auto" style={{ marginBottom: "20px" }} />
 
         {/* 목차 */}
         <nav className="guide-toc">
@@ -140,11 +142,6 @@ function Guide() {
         </section>
 
         {/* 광고 2: 중간 */}
-        <AdSense
-          slot="9808803020"
-          format="auto"
-          style={{ margin: "30px auto", maxWidth: "336px" }}
-        />
 
         {/* 섹션 2: 프리랜서 계산 방법 */}
         <section id="freelancer-guide" className="guide-section">
@@ -221,11 +218,6 @@ function Guide() {
         </section>
 
         {/* 광고 3: 중간 */}
-        <AdSense
-          slot="6779315005"
-          format="auto"
-          style={{ margin: "30px auto" }}
-        />
 
         {/* 섹션 4: 비과세 항목 */}
         <section id="tax-free" className="guide-section">
@@ -336,11 +328,6 @@ function Guide() {
         </section>
 
         {/* 광고 4: 하단 */}
-        <AdSense
-          slot="5466233337"
-          format="auto"
-          style={{ margin: "30px auto", maxWidth: "336px" }}
-        />
 
         {/* 섹션 6: 팁 */}
         <section id="tips" className="guide-section">
@@ -399,6 +386,25 @@ function Guide() {
           </div>
         </section>
 
+        <section className="guide-section">
+          <h2>🧾 가이드 검증 기준 및 업데이트 정책</h2>
+          <div className="guide-content">
+            <p>
+              본 가이드는 실제 급여명세서 구조(과세/비과세/공제) 기준으로 작성되며,
+              법정 요율 변경 시 우선 업데이트합니다.
+            </p>
+            <ul>
+              <li>검증 기준: 입력 항목별 계산 결과 재검산</li>
+              <li>적용 범위: 직장인/프리랜서 공통 케이스 + 예외 케이스</li>
+              <li>업데이트 주기: 월 1회 정기 검토 + 제도 변경 시 수시 반영</li>
+            </ul>
+            <div className="update-log-item">
+              <strong>최종 업데이트: 2026-02-10</strong>
+              <p>광고 배치를 축소하고 안내 콘텐츠를 확장해 정보 밀도를 개선했습니다.</p>
+            </div>
+          </div>
+        </section>
+
         {/* CTA 섹션 */}
         <div className="cta-section">
           <h3>지금 바로 실수령액을 계산해보세요! 💰</h3>
@@ -408,11 +414,6 @@ function Guide() {
         </div>
 
         {/* 광고 5: 푸터 */}
-        <AdSense
-          slot="4153151665"
-          format="auto"
-          style={{ marginTop: "30px" }}
-        />
       </div>
     </div>
   );

@@ -1,5 +1,13 @@
-// src/pages/Contact.jsx
+import usePageMeta from "../hooks/usePageMeta";
+
 function Contact() {
+  usePageMeta({
+    title: "문의하기 | 2026년 실수령액 계산기",
+    description:
+      "서비스 오류 제보, 개선 제안, 제휴 문의 등 2026년 실수령액 계산기 운영팀에 연락하는 방법을 안내합니다.",
+    canonicalPath: "/contact",
+  });
+
   return (
     <div className="container">
       <div className="card" style={{ maxWidth: "700px", margin: "40px auto" }}>
