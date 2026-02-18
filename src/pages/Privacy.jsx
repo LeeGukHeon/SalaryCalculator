@@ -1,5 +1,13 @@
-// src/pages/Privacy.jsx
+import usePageMeta from "../hooks/usePageMeta";
+
 function Privacy() {
+  usePageMeta({
+    title: "개인정보처리방침 | 2026년 실수령액 계산기",
+    description:
+      "2026년 실수령액 계산기 서비스의 개인정보 수집 항목, 이용 목적, 쿠키 정책, 제3자 서비스 이용 내역을 안내합니다.",
+    canonicalPath: "/privacy",
+  });
+
   return (
     <div className="container">
       <div className="card" style={{ maxWidth: "900px", margin: "40px auto" }}>
@@ -29,11 +37,11 @@ function Privacy() {
         <h2>2. 개인정보의 이용 목적</h2>
         <p>본 서비스는 개인정보를 수집하지 않으므로 이용 목적이 없습니다.</p>
 
-        <h2>3. 제3자 제공</h2>
-        <p>본 서비스는 다음의 제3자 서비스를 사용합니다:</p>
+        <h2>3. 제3자 서비스 이용</h2>
+        <p>본 서비스는 다음의 외부 서비스를 사용합니다:</p>
         <ul>
           <li>
-            <strong>Google Analytics</strong>: 웹사이트 방문 통계 분석
+            <strong>Google Analytics</strong>: 방문 통계 분석
           </li>
           <li>
             <strong>Google AdSense</strong>: 광고 표시
