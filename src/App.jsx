@@ -5,6 +5,7 @@ import SalaryInfo from "./pages/SalaryInfo";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 import "./styles/main.css";
 
 const primaryLinks = [
@@ -17,6 +18,7 @@ const legalLinks = [
   { to: "/privacy", label: "개인정보처리방침" },
   { to: "/terms", label: "이용약관" },
   { to: "/contact", label: "문의하기" },
+  { to: "/about", label: "운영원칙" },
 ];
 
 function App() {
@@ -62,6 +64,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
 
