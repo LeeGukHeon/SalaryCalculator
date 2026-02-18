@@ -146,9 +146,6 @@ function Home() {
           직장인과 프리랜서의 실수령액을 간편하게 계산해보세요.
         </p>
 
-        {/* ========== 광고 1: 상단 배너 ========== */}
-        <AdSense slot="3434966366" format="auto" style={{ marginBottom: "20px" }} />
-
         {/* ========== 탭 전환 ========== */}
         <div className="tab-container">
           <button
@@ -1675,6 +1672,7 @@ function Home() {
         <p className="help-text">최종 검토일: 2026-02-10 · 다음 정기 점검: 매월 1주차</p>
       </section>
 
+      {/* ========== 광고: 하단 배치 (첫 화면 가림 최소화) ========== */}
       <AdSense slot="4153151665" format="auto" style={{ marginTop: "24px" }} />
     </div>
   );
